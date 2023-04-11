@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorVP">#00E2FF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="pink">#FF4E4E</color>
+    <color name="green">#4CAF50</color>
+    <color name="white">#FFFFFF</color>
+    <color name="player_red">#FF0000</color>
+</resources>

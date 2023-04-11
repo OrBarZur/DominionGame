@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivAction"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@mipmap/cardback_sh"
+        app:layout_constraintDimensionRatio="w,436:459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/countAction"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@mipmap/counter"
+        android:gravity="center"
+        android:maxLength="2"
+        android:singleLine="true"
+        android:text="0"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="1sp"
+        android:autoSizeMaxTextSize="40sp"
+        android:autoSizeStepGranularity="1sp"
+        android:includeFontPadding="false"
+        android:textColor="@color/white"
+        app:layout_constraintDimensionRatio="w, 1:1"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineActionsVertical"
+        app:layout_constraintStart_toStartOf="@+id/ivAction"
+        app:layout_constraintTop_toTopOf="@+id/ivAction" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineActionsVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

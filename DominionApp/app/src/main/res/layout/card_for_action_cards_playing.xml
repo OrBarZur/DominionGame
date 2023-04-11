@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:id="@+id/constraintLayout">
+
+    <ImageView
+        android:id="@+id/ivAction"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@mipmap/cardback"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,436:685"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAction" />
+
+    <ImageView
+        android:id="@+id/ivGreenMargin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@mipmap/green_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,436:685"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAction"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/ivRedMargin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@mipmap/red_margin_for_trash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,436:685"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAction"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/ivYellowMargin"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@mipmap/yellow_margin_for_discard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,436:685"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAction"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/ivGreenX"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@mipmap/green_x"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,436:685"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAction"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/ivRedX"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@mipmap/red_x_for_trash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,436:685"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAction"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/ivYellowX"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@mipmap/yellow_x_for_discard"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,436:685"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAction"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tvAction"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Text"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="1sp"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeStepGranularity="1sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

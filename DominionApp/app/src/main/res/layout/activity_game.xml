@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.GameActivity"
+    android:orientation="horizontal"
+    android:id="@+id/gameActivity">
+
+    <EditText
+        android:visibility="invisible"
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Enter functions here">
+    </EditText>
+
+    <Button
+        android:visibility="invisible"
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/et"
+        android:layout_centerInParent="true">
+    </Button>
+
+    <RelativeLayout
+        android:id="@+id/btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSubmit"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Game">
+        </Button>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btnEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnStart"
+            android:text="End Actions">
+        </Button>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btnAutoplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btnEnd"
+            android:text="Autoplay">
+        </Button>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/showTurn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btns"
+        android:gravity="center">
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/hands"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showTurn"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/cards1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/cards2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cards1"
+            android:layout_marginLeft="50dp"
+            android:textSize="20sp">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/decks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hands"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/deck1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/deck2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/deck1"
+            android:layout_marginLeft="50dp"
+            android:textSize="20sp">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/discards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/decks"
+        android:layout_centerInParent="true">
+        <TextView
+            android:id="@+id/discard1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/discard2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/discard1"
+            android:layout_marginLeft="50dp"
+            android:textSize="20sp">
+        </TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/showTrash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/discards"
+        android:gravity="center">
+    </TextView>
+
+    <TextView
+        android:id="@+id/board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showTrash"
+        android:gravity="center">
+    </TextView>
+
+
+</RelativeLayout>

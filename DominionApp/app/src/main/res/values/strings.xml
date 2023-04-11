@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dominion_game</string>
+    <string name="undo">Undo</string>
+    <string name="confirm_trash">Confirm Trashing</string>
+    <string name="confirm_discard">Confirm Discarding</string>
+    <string name="confirm_top_deck">Confirm Top Deck</string>
+    <string name="order">Done Ordering</string>
+
+</resources>
