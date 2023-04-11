@@ -1,4 +1,5 @@
 # DominionGame
 An application of the Dominion Game
 
-For Watching all the instruction please open dominion-project.pdf
+For Checking all the instruction please open dominion-project.pdf.
+To see the full code, you can open the DominionApp.
